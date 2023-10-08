@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+   
+    stages {
+        stage('1st Build') {
+            steps {
+                sh 'echo this is 1st job'
+               sh 'echo this is 2st job'
+            }
+        }
+        stage('2nd Test'){
+            steps {
+                sh 'echo testing'
+              
+            }
+        }
+        stage('3rd Deploy') {
+            steps {
+               sh 'echo this is 1st jodeploy'
+            }
+        }
+    }
+}
