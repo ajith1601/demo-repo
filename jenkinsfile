@@ -2,19 +2,19 @@ pipeline {
     agent any
    
     stages {
-        stage('1st Build') {
+        stage('this is call another job') {
             steps {
                 sh 'echo this is 1st job'
                sh 'echo this is 2st job'
             }
         }
-        stage('2nd Test'){
+        stage('this is for testing'){
             steps {
                 sh 'echo testing'
               
             }
         }
-        stage('3rd Deploy') {
+        stage('this is for deploy') {
             steps {
                sh 'echo this is 1st jodeploy'
             }
